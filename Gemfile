@@ -5,6 +5,10 @@ ruby '2.4.4'
 
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
 
+gem 'devise'
+gem 'devise-i18n'
+gem 'russian'
+
 gem 'twitter-bootstrap-rails'
 
 gem 'puma', '~> 3.11'
@@ -16,6 +20,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
+
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   gem 'sqlite3'
