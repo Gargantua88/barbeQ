@@ -4,11 +4,4 @@ class User < ApplicationRecord
   has_many :events
 
   validates :name, presence: true, length: {maximum: 35}
-
-
-  private
-
-  def set_name
-    self.name = "Agent#{rand(777)}" if self.name.blank?
-  end
 end

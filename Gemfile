@@ -7,7 +7,7 @@ gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
 
 gem 'devise'
 gem 'devise-i18n'
-gem 'russian'
+gem 'rails-i18n'
 
 gem 'twitter-bootstrap-rails'
 
