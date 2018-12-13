@@ -1,6 +1,7 @@
 class SubscriptionsController < ApplicationController
   before_action :set_event, only: [:create, :destroy]
   before_action :set_subscription, only: [:destroy]
+  before_action :check_events_author, only: [:create]
 
   def create
     @new_subscription = @event.subscriptions.build(subscription_params)
@@ -36,5 +37,11 @@ class SubscriptionsController < ApplicationController
 
   def subscription_params
     params.fetch(:subscription, {}).permit(:user_email, :user_name)
+  end
+  
+  def check_events_author
+    if @event.user == current_user
+      redirect_to @event, notice: I18n.t('controllers.subscriptions.error')
+    end
   end
 end
