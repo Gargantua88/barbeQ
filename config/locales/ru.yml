@@ -21,6 +21,10 @@ ru:
       destroyed: 'Событие удалено'
     users:
       updated: 'Профиль обновлен'
+    comments:
+      destroyed: 'Комментарий удален'
+      created: 'Комментарий добавлен'
+      error: 'Ошибка с комментарием'
   app:
     name: 'БарбеQ'
     company: 'СтрогOnOff ™'
