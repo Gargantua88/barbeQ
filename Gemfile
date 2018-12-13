@@ -9,7 +9,7 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'
 
-gem 'jbuilder', '~> 2.5'
+gem 'jquery-rails'
 
 gem 'twitter-bootstrap-rails'
 
