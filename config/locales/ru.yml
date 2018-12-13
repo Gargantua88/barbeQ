@@ -25,6 +25,10 @@ ru:
       destroyed: 'Комментарий удален'
       created: 'Комментарий добавлен'
       error: 'Ошибка с комментарием'
+    subscriptions:
+      created: 'Вы подписались на событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
   app:
     name: 'БарбеQ'
     company: 'СтрогOnOff ™'
