@@ -23,4 +23,5 @@ class Subscription < ApplicationRecord
       super
     end
   end
+
 end
