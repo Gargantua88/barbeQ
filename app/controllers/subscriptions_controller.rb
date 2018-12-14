@@ -2,7 +2,6 @@ class SubscriptionsController < ApplicationController
   before_action :set_event, only: [:create, :destroy]
   before_action :set_subscription, only: [:destroy]
   before_action :check_events_author, :check_uniqueness_email, only: [:create]
-
   def create
     @new_subscription = @event.subscriptions.build(subscription_params)
     @new_subscription.user = current_user
@@ -46,7 +45,7 @@ class SubscriptionsController < ApplicationController
   end
 
   def check_uniqueness_email
-    if User.find_by_email(params[:subscription][:user_email])
+    if current_user.nil? && User.find_by_email(params[:subscription][:user_email])
       redirect_to @event, notice: I18n.t('controllers.subscriptions.email_error')
     end
   end
