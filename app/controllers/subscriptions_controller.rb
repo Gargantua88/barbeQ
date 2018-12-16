@@ -40,13 +40,13 @@ class SubscriptionsController < ApplicationController
   
   def check_events_author
     if @event.user == current_user
-      redirect_to @event, notice: I18n.t('controllers.subscriptions.error')
+      redirect_to @event, alert: I18n.t('controllers.subscriptions.error')
     end
   end
 
   def check_uniqueness_email
     if current_user.nil? && User.find_by_email(params[:subscription][:user_email])
-      redirect_to @event, notice: I18n.t('controllers.subscriptions.email_error')
+      redirect_to @event, alert: I18n.t('controllers.subscriptions.email_error')
     end
   end
 end
