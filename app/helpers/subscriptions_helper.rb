@@ -1,5 +1,5 @@
 module SubscriptionsHelper
   def current_user_subscriber?
-    @event.subscriptions.where(user_id: current_user).present?
+    @event.subscriptions.where(user_id: current_user).present? if current_user.present?
   end
 end
