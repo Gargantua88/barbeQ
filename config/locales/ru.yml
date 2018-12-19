@@ -53,12 +53,15 @@ ru:
       signed_up: 'Зарегистрироваться'
       logged_in: 'Войти'
       changed_password: 'Забыли пароль?'
+      password_instructions: 'Выслать инструкции'
+      password_new: 'Новый пароль'
+      password_repeat: 'Повторите новый пароль'
+      password_change: 'Изменить пароль'
   form_errors:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
   are_you_sure: 'Вы уверены?'
-
   event_mailer:
     comment:
       title: 'Новый комментарий'
