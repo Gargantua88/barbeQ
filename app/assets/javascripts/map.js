@@ -26,7 +26,7 @@ function init(){
             myMap.setCenter(coordinates);
             myMap.setZoom(15);
         }, function (err) {
-            alert('РћС€РёР±РєР° РїСЂРё РѕРїСЂРµРґРµР»РµРЅРёРё РјРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёСЏ');
+            alert('Ошибка при определении местоположения');
         }
     );
 }
