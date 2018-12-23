@@ -12,6 +12,5 @@
 //= require jquery
 //= require rails-ujs
 //= require twitter/bootstrap
-//= require ekko-lightbox.js
 //= require activestorage
 //= require_tree .
