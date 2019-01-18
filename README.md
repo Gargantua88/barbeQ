@@ -1,24 +1,47 @@
-# README
+## БарбеQ - приложения для заядлых едаков!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Все знают, что шашлычок под коньячок - вкусно очень © Трофим
 
-Things you may want to cover:
+А с приложением [БарбеQ](http://gargantua-bbq.herokuapp.com/) - это еще и очень просто! Собрать друзей на шашлык дома, на даче, в метро,
+в гостинице и даже на отдаленном атолле - лишь бы не забыть мангал!
 
-* Ruby version
+Достаточно сделать всего несколько простых действий - зарегистрироваться, создать событие, указать дату, место и краткое описание, а затем кинуть на него ссылку
+всем друзьям! Как только они подпишутся - деваться уже будет некуда. Не хотите, чтобы к вам приходили сомнительные проходимцы?
+Не проблема - просто добавьте пин-код к событию, и нежелательные гости отсеются сами собой!
 
-* System dependencies
+Реализована удобная рассылка уведомлений подписчикам событий, выгрузка фотографий.
 
-* Configuration
+### Скриншот страницы события
 
-* Database creation
+![Иллюстрация к проекту](https://cdn1.savepice.ru/uploads/2019/1/18/95940446708e63f1c030b4e73d302629-full.jpg)
 
-* Database initialization
+### Техническая информация
 
-* How to run the test suite
+Приложение создано на *rails 5.2.1*
 
-* Services (job queues, cache servers, search engines, etc.)
+Версия *ruby 2.4.4*
 
-* Deployment instructions
+Для надежнейший регистрации - гем [devise](https://github.com/plataformatec/devise)
 
-* ...
+Для удобнейшей загрузки фото - гем [carrierwave](https://github.com/carrierwaveuploader/carrierwave)
+
+Для ласкающих взгляд форм и иконок - гем [twitter-bootstrap-rails](https://github.com/seyhunak/twitter-bootstrap-rails)
+
+Для молниеносного поиска места встречи - API [Яндекс.Карты](https://tech.yandex.ru/maps/?p=realty)
+
+### Запуск
+
+Перед запуском требуется выполнить `bundle install`
+
+Не забудьте сделать миграции `rake db:migrate`
+
+Затем запустите *rails server* `rails s` и наслаждайтесь!
+
+### Автор
+
+Ваш покорнейше сытый слуга
+
+### Лицензия
+
+Программа свободная, пользуйтесь кто хотите.
+
